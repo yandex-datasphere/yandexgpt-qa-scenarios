@@ -28,9 +28,9 @@
 1. Перейдите в сервис [Yandex DataSphere](https://cloud.yandex.ru/services/datasphere) и создайте в нем [сообщество](https://cloud.yandex.ru/docs/datasphere/operations/community/create) и [проект](https://cloud.yandex.ru/docs/datasphere/operations/projects/create), в котором можно будет запускать код на Python. 
 1. Создайте [коннектор](https://cloud.yandex.ru/docs/datasphere/operations/data/s3-connectors) к Object Storage S3 в проекте DataSphere. Активируйте коннектор для работы с ним JupyterLab. 
 1. В созданном проекте необходимо перейти во вкладку "Настройки" и указать:
-- *Каталог по умолчанию*: каталог, в котором созданы сервисы Yandex Managed Service for OpenSearch и YandexGPT.
-- *Сервисный аккаунт*: [сервисный аккаунт](https://cloud.yandex.ru/docs/iam/quickstart-sa), который позволит обращаться к другим сервисам из проекта DataSphere. Важно, что сервисному аккаунту должны быть назначены роли *ai.languageModels.user* для доступа к модели YandexGPT, *managed-opensearch.admin* для работы с OpenSearch и *vpc.user*.
-- *Подсеть*: укажите подсеть, в которой находятся сервисы OpenSearch и YandexGPT.
+- `Каталог по умолчанию`: каталог, в котором созданы сервисы Yandex Managed Service for OpenSearch и YandexGPT.
+- `Сервисный аккаунт`: [сервисный аккаунт](https://cloud.yandex.ru/docs/iam/quickstart-sa), который позволит обращаться к другим сервисам из проекта DataSphere. Важно, что сервисному аккаунту должны быть назначены роли *ai.languageModels.user* для доступа к модели YandexGPT, *managed-opensearch.admin* для работы с OpenSearch и *vpc.user*.
+- `Подсеть`: укажите подсеть, в которой находятся сервисы OpenSearch и YandexGPT.
 1. Откройте проект в JupyterLab и склонируйте данный репозиторий с помощью [Git](https://cloud.yandex.ru/docs/datasphere/operations/projects/work-with-git). При запуске рекомендуем использовать режим Dedicated. 
 1. Откройте в проекте ноутбук [YandexGPT_OpenSearch.ipynb](YandexGPT_OpenSearch.ipynb) и выполните все ячейки кода.
 
