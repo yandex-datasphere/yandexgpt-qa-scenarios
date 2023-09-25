@@ -1,0 +1,6 @@
+opensearch-py
+pdf2image
+PyJWT
+langchain
+sentence_transformers
+InstructorEmbedding

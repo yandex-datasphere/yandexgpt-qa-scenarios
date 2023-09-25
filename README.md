@@ -23,7 +23,8 @@
 
 ## Пошаговая инструкция
 
-1. Необходимо перейти в сервис [OpenSearch](https://cloud.yandex.ru/services/managed-opensearch) и создать кластер по [инструкции](https://cloud.yandex.ru/docs/managed-opensearch/operations/cluster-create). Необходимо создать группу виртуальных хостов OpenSearch и группу виртуальных хостов Dashboards.
+1. Необходимо перейти в сервис [OpenSearch](https://cloud.yandex.ru/services/managed-opensearch) и создать кластер по [инструкции](https://cloud.yandex.ru/docs/managed-opensearch/operations/cluster-create). Необходимо создать группу виртуальных хостов OpenSearch и группу виртуальных хостов Dashboards. Важно, чтобы кластер OpenSearch, Object Storage и DataSphere находились в одной подсети, например, 
+default-ru-central1-a.
 1. Перейдите в сервис [Yandex Object Storage](https://cloud.yandex.ru/docs/storage/), создайте новый бакет и загрузите в него документы, по которым будет необходимо отвечать на вопросы.  
 1. Перейдите в сервис [Yandex DataSphere](https://cloud.yandex.ru/services/datasphere) и создайте в нем [сообщество](https://cloud.yandex.ru/docs/datasphere/operations/community/create) и [проект](https://cloud.yandex.ru/docs/datasphere/operations/projects/create), в котором можно будет запускать код на Python. 
 1. Создайте [коннектор](https://cloud.yandex.ru/docs/datasphere/operations/data/s3-connectors) к Object Storage S3 в проекте DataSphere. Активируйте коннектор для работы с ним JupyterLab. 
