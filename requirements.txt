@@ -4,3 +4,4 @@ PyJWT
 langchain
 sentence_transformers
 InstructorEmbedding
+unstructured
