@@ -32,8 +32,14 @@ default-ru-central1-a.
 - `Каталог по умолчанию`: каталог, в котором созданы сервисы Yandex Managed Service for OpenSearch и YandexGPT.
 - `Сервисный аккаунт`: [сервисный аккаунт](https://cloud.yandex.ru/docs/iam/quickstart-sa), который позволит обращаться к другим сервисам из проекта DataSphere. Важно, что сервисному аккаунту должны быть назначены роли *ai.languageModels.user* для доступа к модели YandexGPT, *managed-opensearch.admin* для работы с OpenSearch и *vpc.user*.
 - `Подсеть`: укажите подсеть, в которой находятся сервисы OpenSearch и YandexGPT.
+> [!CAUTION]
+> При установке кастомной подсети в проекте  DataSphere пропадает доступ в интернет. Из-за этого не будет возможности устанавливать библиотеки в ноутбуке через %pip. Чтобы вернуть доступ необходимо настроить NAT-шлюз для подсети по [инструкции](https://cloud.yandex.ru/ru/docs/vpc/operations/create-nat-gateway).
+
+## Работа в ноутбуке
+
 1. Откройте проект в JupyterLab и склонируйте данный репозиторий с помощью [Git](https://cloud.yandex.ru/docs/datasphere/operations/projects/work-with-git). При запуске рекомендуем использовать режим Dedicated. 
-1. Откройте в проекте ноутбук [YandexGPT_OpenSearch.ipynb](YandexGPT_OpenSearch.ipynb) и выполните все ячейки кода.
+1. [Откройте](https://datasphere.yandex.ru/import-ipynb?path=https://raw.githubusercontent.com/yandex-datasphere/yandexgpt-qa-scenarios/main/YandexGPT_OpenSearch.ipynb
+) в проекте ноутбук [YandexGPT_OpenSearch.ipynb](YandexGPT_OpenSearch.ipynb) и выполните все ячейки кода.
 
 
 ## Основные шаги в ноутбуке YandexGPT_OpenSearch
