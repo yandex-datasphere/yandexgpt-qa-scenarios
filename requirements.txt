@@ -1,7 +1,8 @@
-opensearch-py
-pdf2image
-PyJWT
-langchain
-sentence_transformers
-InstructorEmbedding
-unstructured
+opensearch-py==2.4.2
+pdf2image==1.17.0
+PyJWT==2.3.0
+langchain==0.1.4
+sentence_transformers==2.3.1
+InstructorEmbedding==1.0.1
+unstructured==0.12.3
+yandexcloud==0.255.0
